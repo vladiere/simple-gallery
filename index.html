@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Welcome!</h2>
+                    <p>Create your account.<br>For Free!</p>
+                    <a href="#?" class="btn" >Sign Up</a>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <div class="login">
+                        <p id="fadeUser">
+                            <label>Username<span>*</span></label>
+                            <label for="erruser" id="erruser"></label>
+                            <input type="text" placeholder="Username" id="loguser" name="loguser" onkeyup="loginFunction()" required>
+                        </p>
+                        <p id="fadePass">
+                            <label>Password<span>*</span></label>
+                            <label for="errpass" id="errpass"></label>
+                            <input type="password" placeholder="Password" id="logpass" name="logpass" onkeyup="loginFunction()" required>
+                        </p>
+                        <p>
+                            <input type="submit" id="btn-login" value="Sign In">
+                        </p>
+                        <p>
+                            <a href="./forgot-password/index.html">Forgot password?</a>
+                        </p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/src/js/jquery.js"></script>
+<script src="/src/js/swal.js"></script>
+<script src="/src/js/login.js"></script>
+</html>

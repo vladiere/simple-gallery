@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Register Now!</h2>
+                    <p>Already have an account?<br>Sign in now!</p>
+                    <a href="#?" class="btn" id="btn-sign">Sign in</a>
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Register</h2>
+                    <div class="register">
+                        <p>
+                            <label>Your Fullname<span>*</span></label>
+                            <label id="errorname"></label>
+                            <input type="text" placeholder="Example Fullname" id="regname" name="regname" required>
+                        </p>
+                        <p>
+                            <label>Your Email address<span>*</span></label>
+                            <label id="erroremail"></label>
+                            <input type="text" placeholder="Example@email.com" id="regemail" name="regemail" required>
+                        </p>
+                        <p>
+                            <label>Your Username<span>*</span></label>
+                            <label id="erroruser"></label>
+                            <input type="text" placeholder="Example12345" id="reguser" name="reguser" required>
+                        </p>
+                        <p>
+                            <label>Password<span>*</span></label>
+                            <label id="errorpass"></label>
+                            <input type="password" id="regpass" placeholder="***********" id="regpass" name="regpass" required>
+                        </p>
+                        <p>
+                            <label>Confirm Password<span>*</span></label>
+                            <label id="errorpass2"></label>
+                            <input type="password" id="regpass2" placeholder="***********" id="regpass2" name="regpass2" required>
+                        </p>
+                        <p>
+                            <input type="submit" id="btn-reg" value="Sign Up">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/src/js/jquery.js"></script>
+<script src="/src/js/swal.js"></script>
+<script src="/src/js/register.js"></script>
+</html>
