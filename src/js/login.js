@@ -65,6 +65,7 @@ const loginFunction = () =>{
         $('#erruser').addClass('invalid').text('Please enter your username')
     } else if(username.length < 6){
         $('#erruser').addClass('invalid').text('Username must be at least 6 characters')
+        $('#fadePass').hide()
     } else {
         flag += 1
         $('#fadeUser input').attr('disable')
