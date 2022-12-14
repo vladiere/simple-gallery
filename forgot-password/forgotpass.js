@@ -21,7 +21,7 @@ sendOtp = (emailadd, otpNumb) => {
         Username : "ruthakaza@gmail.com",
         Password : "2A3B8AAA1FE628DB418A9242184F0DB743F7",
         To : emailadd,
-        From : "fynedaemi@gmail.com",
+        From : "kazhu.korvi@gmail.com",
         Subject : "OTP",
         Body : otpNumb
     }).then(message => {
